@@ -1,0 +1,57 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="displays" version="1.0">
+  <property name="ActiveProfile" type="string" value="Default"/>
+  <property name="Notify" type="int" value="1"/>
+  <property name="AutoEnableProfiles" type="int" value="3"/>
+  <property name="Default" type="empty">
+    <property name="HDMI-0" type="string" value="Sichuang Changhong Corporation 23&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="f2ae2a35b121723338530dd1dea40994e10645bf"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="60"/>
+      <property name="ModeFlags" type="uint64" value="5"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="2552"/>
+        <property name="Y" type="int" value="0"/>
+      </property>
+    </property>
+    <property name="DP-2" type="string" value="LG Electronics 24&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="eaa2c10a8f5f84fc5bfb211c37005705970aaf08"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="143.98145070141612"/>
+      <property name="ModeFlags" type="uint64" value="9"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="1920"/>
+        <property name="Y" type="int" value="1080"/>
+      </property>
+    </property>
+    <property name="DP-4" type="string" value="LG Electronics 24&quot;">
+      <property name="Active" type="bool" value="true"/>
+      <property name="EDID" type="string" value="13168a73d3015a1920b2eda744fb4580b43e1aeb"/>
+      <property name="DuplicateEDID" type="bool" value="false"/>
+      <property name="Resolution" type="string" value="1920x1080"/>
+      <property name="RefreshRate" type="double" value="143.98145070141612"/>
+      <property name="ModeFlags" type="uint64" value="9"/>
+      <property name="Rotation" type="int" value="0"/>
+      <property name="Reflection" type="string" value="0"/>
+      <property name="Primary" type="bool" value="false"/>
+      <property name="Scale" type="double" value="1"/>
+      <property name="Position" type="empty">
+        <property name="X" type="int" value="0"/>
+        <property name="Y" type="int" value="1080"/>
+      </property>
+    </property>
+  </property>
+</channel>

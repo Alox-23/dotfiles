@@ -1,0 +1,107 @@
+* {
+    font-family: "Maple Mono NF";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #cdd6f4;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: rgba(30, 30, 46, 0.85);
+    border-radius: 20px;
+    padding: 1px 8px;
+    margin: 0 4px;
+}
+
+#custom-arch,
+#hyprland-workspaces,
+#hyprland-window,
+#custom-audio,
+#memory,
+#cpu,
+#custom-temperature,
+#clock {
+    padding: 1px 8px;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+
+/* Increased padding for window element specifically */
+#hyprland-window {
+    padding: 1px 16px;
+    color: #a6e3a1;
+    font-weight: 500;
+}
+#hyprland-workspace {
+    padding: 1px 16px;
+    color: #a6e3a1;
+}
+
+#custom-arch:hover,
+#hyprland-workspaces:hover,
+#hyprland-window:hover,
+#custom-audio:hover,
+#memory:hover,
+#cpu:hover,
+#custom-temperature:hover,
+#clock:hover {
+    background: rgba(49, 50, 68, 0.8);
+}
+
+#custom-arch {
+    color: #89b4fa;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#hyprland-workspaces button {
+    padding: 0 4px;
+    color: #6c7086;
+    border-radius: 6px;
+}
+
+#hyprland-workspaces button.active {
+    color: #89b4fa;
+    background: rgba(137, 180, 250, 0.2);
+}
+
+#hyprland-workspaces button:hover {
+    color: #cdd6f4;
+    background: rgba(205, 214, 244, 0.1);
+}
+
+#custom-audio {
+    color: #cba6f7;
+}
+
+#memory {
+    color: #94e2d5;
+}
+
+#cpu {
+    color: #fab387;
+}
+
+#custom-temperature {
+    color: #f9e2af;
+}
+
+#clock {
+    color: #89dceb;
+    font-weight: 500;
+}
+
+tooltip {
+    background: rgba(30, 30, 46, 0.95);
+    border-radius: 8px;
+    border: 1px solid #313244;
+    font-size: 12px;
+    padding: 8px;
+}

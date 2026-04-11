@@ -1,0 +1,54 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    
+    "logo": {
+        "source": "/home/hackerman/.config/fastfetch/logo.gif",
+        "type": "kitty-icat",
+        "width": 13,
+        "height": 13,
+        "padding": {
+	    "top": 0,
+   	    "left": 0,
+	    "right": 4
+        }
+    },
+    
+    "display": {
+        "separator": "  ",
+        "color": {
+            "keys": "blue",
+            "title": "cyan"
+        }
+    },
+    
+    "modules": [
+        "title",
+        "separator",
+        {
+            "type": "kernel",
+            "key": " kernel",
+            "keyColor": "red"
+        },
+        {
+            "type": "os",
+            "key": "󰣇 os",
+            "keyColor": "cyan"
+        },
+	{
+            "type": "uptime",
+            "key": " uptime",
+            "keyColor": "green"
+        },  
+	{
+            "type": "packages",
+            "key": "󰮯 pkgs",
+            "keyColor": "blue",
+            "format": "{} (pacman)"
+        },
+        {
+            "type": "memory",
+            "key": "󰍛 memory",
+            "keyColor": "yellow"
+        }
+    ]
+}

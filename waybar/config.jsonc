@@ -1,0 +1,80 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 8,
+    "margin-top": 5,
+    "margin-left": 5,
+    "margin-right": 5,
+    
+    "modules-left": ["custom/arch", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["custom/audio", "memory", "cpu", "custom/temperature", "clock"],
+    
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    
+    "hyprland/window": {
+        "format": "{}",
+	"empty-format": "",
+        "max-length": 50
+     },
+    
+    "clock": {
+        "format": "{:%d.%m.%y %H:%M}",
+        "interval": 60,
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2,
+        "tooltip": true,
+        "tooltip-format": "CPU Usage: {usage}%\nAverage: {avg:10}%"
+    },
+    
+    "memory": {
+        "format": " {percentage}%",
+        "interval": 5,
+        "tooltip": true,
+        "tooltip-format": "RAM: {used:0.1f}G / {total:0.1f}G"
+    },
+    
+    "custom/temperature": {
+        "format": "󰔏{}°C",
+        "exec": "sensors | grep 'Core 0' | awk '{print $3}' | sed 's/+//' | cut -d'.' -f1",
+        "interval": 5,
+        "tooltip": true,
+        "tooltip-format": "CPU Temperature\n{}°C",
+        "exec-if": "which sensors"
+    },
+    
+    "custom/audio": {
+	"format": "{}",
+	"exec": "~/.config/waybar/audio.sh",
+	"exec-if": "which pamixer",
+	"interval": 0.5,
+	"signal": 10,
+	"return-type": "json",
+	"on-click": "pamixer -t",
+	"on-click-right": "pavucontrol",
+	"on-scroll-up": "pamixer -i 5",
+	"on-scroll-down": "pamixer -d 5",
+	"tooltip": false
+    },
+    
+    "custom/arch": {
+        "format": "󰣇 ",
+        "tooltip": true,
+        "tooltip-format": "Arch Linux\n󰣇  The Arch Way"
+    }
+}
