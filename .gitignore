@@ -1,0 +1,124 @@
+# Sensitive files and directories
+*secret*
+*password*
+*credential*
+*api*
+*token*
+*key*
+*private*
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+
+# Specific application configs with sensitive data
+
+# Hyprland (might contain passwords in configs)
+hypr/*secret*
+hypr/*password*
+hypr/*key*
+
+# Waybar (might contain API keys for modules)
+waybar/*secret*
+waybar/*api*
+waybar/config.jsonc.backup
+waybar/config.jsonc.local
+
+# Mozilla Firefox profiles (contains saved passwords)
+mozilla/firefox/*.default-release/logins.json
+mozilla/firefox/*.default-release/key4.db
+mozilla/firefox/*.default-release/cert9.db
+mozilla/firefox/Profiles/*/logins.json
+mozilla/firefox/Profiles/*/key4.db
+
+# PulseAudio (might contain network credentials)
+pulse/*.auth
+pulse/*.cookie
+
+# nwg-look (might contain themes with API keys)
+nwg-look/*secret*
+nwg-look/*token*
+
+# Thunar bookmarks (might contain network paths with passwords)
+Thunar/bookmarks
+Thunar/uca.xml
+
+# xfce4 (might contain saved passwords in various configs)
+xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+xfce4/panel/*secret*
+
+# Environment files
+.env
+.env.*
+*.env
+*.env.local
+*.env.*.local
+
+# Backup files that might contain sensitive data
+*.backup
+*.old
+*.orig
+*.save
+*~
+
+# Session data
+*session*
+*cache*
+*.log
+*.tmp
+
+# Network manager and connections
+NetworkManager/
+connman/
+wpa_supplicant.conf
+*.conf.backup
+
+# Git credentials
+.git-credentials
+.gitconfig.local
+.netrc
+.authinfo
+
+# Cloud service configs
+*aws*
+*.aws/
+*gcloud*
+*.gcloud/
+*azure*
+*.azure/
+*cloudflare*
+
+# Package manager caches (often large)
+yay/cache/
+yay/sources/
+yay/pkg/
+
+# Wayland and display server leftovers
+*-state
+*-lock
+*.lock
+
+# Editor backups
+*~
+*.swp
+*.swo
+.*.swp
+.*.swo
+
+# Sensitive in any subdirectory of these apps
+**/dconf/user (contains system settings, may have sensitive data)
+
+# Generic patterns for common sensitive files
+**/secrets/**
+**/keys/**
+**/certs/**
+**/credentials/**
+**/tokens/**
+
+# Ignore local overrides
+*.local
+*.local.*
+*-local
+*_local
