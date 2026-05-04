@@ -1,1 +1,0 @@
-1775855510372	SessionStore.LogManager	ERROR	Failed to copy log stream to file: UnknownError: Could not create directory `/home/hackerman/.config/mozilla/firefox/8fcbedwm.default-release/sessionstore-logs' (NS_ERROR_FAILURE) No traceback available
