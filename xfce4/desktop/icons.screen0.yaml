@@ -11,7 +11,16 @@ configs:
       y: 0
       width: 1920
       height: 1080
-  icons: {}
+  icons:
+    "/":
+      row: 1
+      col: 0
+    "trash:///":
+      row: 2
+      col: 0
+    "/home/hackerman":
+      row: 0
+      col: 0
 - level: 1
   monitors:
   - id: "c3c580bd89175b57dbed8d9a73f01459a3752bf5"
